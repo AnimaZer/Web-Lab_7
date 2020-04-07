@@ -1,0 +1,68 @@
+﻿<html lang="en">
+
+<head>
+  <title>hello!</title>
+  <link rel="stylesheet" href="css/style.css">
+  <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.3.0/lodash.js"></script> -->
+  <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+</head>
+
+<body>
+  <script id="template" type="text/template">
+    <div class="<%- className %>"> 
+      <p> <%= blockName%> </p> 
+      <select size = "10" class = "<%- classSelect %>" >
+        <% option.forEach(function(option) { %>
+          <option><%- option %></option>
+        <% }); %>
+      </select> 
+    </div>
+  </script>
+  <div class="app">
+    <!-- <div class="listing-block">
+      <p>Listing:</p>
+      <select size="10" class="listing-select">
+        <option>apple</option>
+        <option>orange</option>
+      </select>
+    </div>
+
+    <div class="store-block">
+      <p>Store:</p>
+      <select size="10" class="store-select">
+      </select>
+    </div> -->
+  </div>
+
+
+  <button id="add-btn">
+    Add to store
+  </button>
+  <br>
+  <button id="delete-listing-element-btn">
+    Delete listing element
+  </button>
+  <br>
+  <button id="delete-store-element-btn">
+    Delete store element
+  </button>
+  <br>
+  <button id="clear-listing-btn">
+    Clear listing
+  </button>
+  <br>
+  <button id="clear-store-btn">
+    Clear store
+  </button>
+  <br>
+  <button id="create-element-btn">
+    Create listing element
+  </button>
+  <br>
+  <button id="sort-store-btn">
+    Sort store elements
+  </button>
+</body>
+<script src="js/main.js"></script>
+
+</html>
